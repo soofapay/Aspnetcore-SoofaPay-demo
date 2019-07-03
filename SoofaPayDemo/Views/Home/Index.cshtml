@@ -1,0 +1,61 @@
+﻿
+<link href="~/css/test.css" rel="stylesheet" />
+<script id="qbn"
+        src="https://checkout.soofapay.com/v1/soofa.min.js"
+        type="text/javascript"
+        data-till="5002">
+</script>
+<div class="container">
+    <div class="card">
+        <div class="container-fliud">
+            <div class="wrapper row">
+                <div class="preview col-md-6">
+              
+                    <div class="preview-pic tab-content">
+                        <div class="tab-pane active" id="pic-1"><img src="Images/iphone8-plus-gold-select-2018.png" height="400" width="300" /></div>
+                        <div class="tab-pane" id="pic-2"><img src="Images/iphone8-plus-gold-select-2018.png" height="400" width="300" /></div>
+                        <div class="tab-pane" id="pic-3"><img src="Images/iphone8-plus-gold-select-2018.png" height="400" width="300" /></div>
+                        <div class="tab-pane" id="pic-4"><img src="Images/iphone8-plus-gold-select-2018.png" height="400" width="300"/></div>
+                        <div class="tab-pane" id="pic-5"><img src="Images/iphone8-plus-gold-select-2018.png" height="400" width="300"/></div>
+                    </div>
+                    <ul class="preview-thumbnail nav nav-tabs">
+                        <li class="active"><a data-target="#pic-1" data-toggle="tab"><img src="Images/iphone8-plus-gold-select-2018.png" /></a></li>
+                        <li><a data-target="#pic-2" data-toggle="tab"><img src="Images/iphone8-plus-gold-select-2018.png" /></a></li>
+                        <li><a data-target="#pic-3" data-toggle="tab"><img src="Images/iphone8-plus-gold-select-2018.png" /></a></li>
+                        <li><a data-target="#pic-4" data-toggle="tab"><img src="Images/iphone8-plus-gold-select-2018.png" /></a></li>
+                        <li><a data-target="#pic-5" data-toggle="tab"><img src="Images/iphone8-plus-gold-select-2018.png" /></a></li>
+                    </ul>
+
+                </div>
+                <div class="details col-md-6">
+                    <h3 class="product-title">Iphone</h3>
+                    <div class="rating">
+                        <div class="stars">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <span class="review-no">41 reviews</span>
+                    </div>
+                    <p class="product-description">Product description.</p>
+                    <h4 class="price">current price: <span>Ksh:180</span></h4>
+                    <p class="vote"><strong>91%</strong> of buyers enjoyed this product! <strong>(87 votes)</strong></p>
+                    <form class="soofa" asp-controller="Home" asp-action="Payment" method="post">
+                      
+                        <input type="text" name="amount" value="180" hidden />
+                        <input type="text" name="reference" value="product reference id" hidden />
+                        <input type="text" name="tid" value="" hidden />
+                        <input id="ww" type="button" class="btn btn-primary qbn-submit" value="Poceed to pay" />
+                    </form>
+
+
+
+                    <div class="action">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
